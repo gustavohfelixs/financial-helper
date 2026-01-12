@@ -1,4 +1,4 @@
-# Assistente Financeiro para Telegram
+# Assistente Financeiro para Whatsapp
 
 Este projeto é um chatbot para Telegram que atua como um assistente financeiro. O bot é construído com Java 25, Spring
 Boot, LangChain4j e a API do Google Gemini. A aplicação é projetada para ser implantada de forma segura e escalável no
@@ -32,4 +32,5 @@ Este projeto integra um conjunto de tecnologias modernas para criar uma soluçã
   deploy.
 - **Google Cloud Run & Artifact Registry**: Plataforma serverless para a execução do contêiner e registro seguro para o
   armazenamento da imagem Docker.
+
 - **GitHub Actions**: Utilizado para a automação do processo de CI/CD (Integração e Entrega Contínua).

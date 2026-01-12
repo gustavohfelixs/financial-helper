@@ -22,6 +22,6 @@ public class AssistantTools {
 
     @Tool("Regitra entradas de valores com base na conta e o valor recebido")
     public String calculateQuotation(String account, double amount) {
-        return String.format( "R$ %s adicionado ao saldo da conta %s. Saldo atual de %s" ,amount, account, amount + 100.00);
+        return String.format("R$ %s adicionado ao saldo da conta %s. Saldo atual de %s", amount, account, amount + 100.00);
     }
 }

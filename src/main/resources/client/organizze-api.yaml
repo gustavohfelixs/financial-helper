@@ -12,8 +12,8 @@ servers:
   - url: https://api.organizze.com.br/rest/v2
     description: Organizze API
 security:
-  - basicAuth: []
-  - userAgent: []
+  - basicAuth: [ ]
+  - userAgent: [ ]
 tags:
   - name: Bank Accounts
   - name: Categories
@@ -714,8 +714,8 @@ components:
         oposite_account_id: null
         created_at: "2023-04-08T12:32:16-03:00"
         updated_at: "2023-04-08T12:32:16-03:00"
-        tags: []
-        attachments: []
+        tags: [ ]
+        attachments: [ ]
         recurrence_id: null
     TransactionInput:
       title: Transaction Input
@@ -782,7 +782,7 @@ components:
         account_id: 6632818
         category_id: 120321159
         notes: Pagamento via boleto
-        tags: []
+        tags: [ ]
     RecurringTransaction:
       title: Recurring Transaction
       description: Recurring Transaction
@@ -1337,8 +1337,8 @@ components:
         balance_cents: 0
         previous_balance_cents: 0
         credit_card_id: 1287765
-        transactions: []
-        payments: []
+        transactions: [ ]
+        payments: [ ]
     Budget:
       title: Budget
       type: object
@@ -1756,7 +1756,7 @@ components:
           schema:
             description: Missing Authentication
             type: string
-            enum: ["HTTP Basic: Access denied."]
+            enum: [ "HTTP Basic: Access denied." ]
             example: "HTTP Basic: Access denied."
     UnprocessableEntity:
       description: Validation errors
@@ -1778,7 +1778,7 @@ components:
               id: null
               name: null
               errors:
-                name: ["não pode estar em branco"]
+                name: [ "não pode estar em branco" ]
     BadRequest:
       description: Bad request (e.g., missing User-Agent header)
       content:

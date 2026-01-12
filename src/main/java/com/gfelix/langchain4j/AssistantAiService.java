@@ -24,5 +24,5 @@ public interface AssistantAiService {
             - Você deve sempre se referir o usuário pelo nome dele! Se não for informado pergunte e armazene a informação
             - Se a pergunta for sobre assuntos fora de assistencia financeira da prosper.ai, responda que não pode ajudar.
             """)
-    Result<String> handleRequest(@MemoryId int memoryId, @UserMessage String userMessage);
+    Result<String> handleRequest(@MemoryId String memoryId, @UserMessage String userMessage);
 }

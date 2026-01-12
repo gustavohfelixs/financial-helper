@@ -20,13 +20,8 @@ public class AssistantTools {
             "premium", 0.12
     );
 
-    @Tool("Calcula o valor total do aluguel corporativo com base na categoria do carro e número de dias")
-    public String calculateQuotation(String category, int days) {
-        Double base =  DAILY_BASE_PRICE.get(category);
-        Double rate =  INSURANCE_RATE.get(category);
-
-        double total = (days * base) * (1+rate);
-
-        return String.format( "Cotação: %s por %d dias → R$ %.2f (inclui seguro %.0f%%)" ,category, days, total, rate * 100);
+    @Tool("Regitra entradas de valores com base na conta e o valor recebido")
+    public String calculateQuotation(String account, double amount) {
+        return String.format( "R$ %s adicionado ao saldo da conta %s. Saldo atual de %s" ,amount, account, amount + 100.00);
     }
 }
